@@ -1,0 +1,98 @@
+<html>
+
+    
+    <head>
+    
+        <title>
+        
+            Welcome Soumyadeep
+        
+        </title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    
+    </head>
+    
+    <body>
+    
+        <div class="page">
+            
+            <div class="topBar">
+            
+                <img src="assets/bar.png" height="100%" width="100%">
+                
+                <div class="logo">
+                
+                    <img src="assets/logo.png" height="100%" width="100%">   
+                
+                </div>
+            
+            </div>
+        
+            <div class="heading">
+            
+                Hi! Soumyadeep
+                
+            </div>
+            
+            <div class="description">
+            
+                <center>Welcome to your first challenge on this journey! Given below is an audio. Can you figure out the location it describes and reach it when the timer reaches 0? (Don't forget to be prepared with a song to sing)</center>
+            
+            </div>
+            
+            <div class="timer">
+                
+                <center><p id="demo"></p></center>
+                
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("May 01, 2022 18:00:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Display the result in the element with id="demo"
+                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+
+                  // If the count down is finished, write some text
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Are you here yet ?";
+                  }
+                }, 1000);
+                </script>
+            
+            </div>
+            
+            <div class="audioFile">
+            
+                <audio controls>
+                  <source src="assets/hintsoumyadeepmaji.mp4" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            
+            </div>
+        
+        </div>
+    
+    </body>
+
+</html>

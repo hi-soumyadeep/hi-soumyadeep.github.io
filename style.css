@@ -1,0 +1,122 @@
+body
+{
+    background-color: black;
+}
+
+.page
+{
+    padding-top: 0vh;
+    padding-left: 0vw;
+    padding-bottom: 0vh;
+    padding-right: 0vw;
+    
+    margin-right: 0vw;
+    margin-left: 0vw;
+    
+    height: 95vh;
+    width: 99vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.topbar
+{
+    height: 60px;
+    
+    position: relative;
+    
+}
+
+.logo
+{   
+    
+    padding-top: 0vh;
+    padding-left: 0vw;
+    padding-bottom: 0vh;
+    padding-right: 0vw;
+    
+    
+    margin-top:0vh;
+    margin-bottom: 0vh;
+    margin-right: 0vw;
+    margin-left: 0vw;
+    
+    
+    height: 60px;
+    width: 120px;
+    
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    margin-top: -30px;
+    margin-left: -60px;
+    
+}
+
+.heading
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    font-family: 'Dosis', sans-serif;
+    font-size: 8vh;
+    color: white;
+    
+}
+
+.description
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    font-family: 'Dosis', sans-serif;
+    font-size: 5vh;
+    color: white;
+    
+}
+
+.timer
+{
+    
+    font-family: 'Dosis', sans-serif;
+    font-size: 10vh;
+    color: white;
+    
+}
+
+.audioFile
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+        
+}
+
+@media only screen and (max-width: 450px)
+{
+
+    .description
+    {
+        
+        font-size: 7vw;
+   
+    }
+    
+    .timer
+    {
+        
+        font-size: 8vw;
+        
+    }
+    
+}
